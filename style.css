@@ -6,7 +6,6 @@
 * {
     font-family: 'Myfontclass-Regular', sans-serif;
     color: #333;
-
 }
 
 body {
@@ -14,73 +13,68 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    /* Menghapus margin bawaan halaman */
+    margin: 10vh 5vw; /* Adjusted margin for better responsiveness */
 }
 
 body h1 {
-    margin-top: 10vh;
+    margin-top: 5vh; /* Adjusted margin for better responsiveness */
 }
 
-body .judul {
-    font-size: 40px;
-    margin-top: 10vh;
-    width: 80vh;
+body .judul,
+body .pendahuluan,
+body .text-pendahuluan,
+body .text,
+body .judul2,
+body .text2,
+body ol,
+body .judul3,
+body .text3 {
+    width: 90vw; /* Adjusted width for better responsiveness */
+    max-width: 800px; /* Set a maximum width for larger screens */
+    margin-top: 5vh; /* Adjusted margin for better responsiveness */
 }
 
-body .pendahuluan {
-    font-size: 40px;
-    margin-top: 10vh;
-    width: 80vh;
+body .judul,
+body .pendahuluan,
+body .text-pendahuluan,
+body .text,
+body .judul2,
+body .text2,
+body ol,
+body .judul3,
+body .text3 {
+    font-size: 3.5vw; /* Adjusted font size for better responsiveness */
 }
 
-body .text-pendahuluan {
-    width: 80vh;
-    text-align: justify;
-    font-size: 3vh;
-}
-
-body .text {
-    width: 80vh;
-    text-align: justify;
-    font-size: 3vh;
-}
-
-body .Bab-1 {
-    text-align: center;
-    justify-content: center;
+body .text-pendahuluan,
+body .text,
+body .text2,
+body .text3 {
+    font-size: 2.5vw; /* Adjusted font size for better responsiveness */
 }
 
 body .image {
-    width: 20%;
+    width: 30%; /* Adjusted width for better responsiveness */
 }
 
-body .judul2 {
-    font-size: 40px;
-    margin-top: 10vh;
-    width: 80vh;
-}
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    body .judul,
+    body .pendahuluan,
+    body .text-pendahuluan,
+    body .text,
+    body .judul2,
+    body .text2,
+    body ol,
+    body .judul3,
+    body .text3 {
+        font-size: 5vh; /* Adjusted font size for smaller screens */
+    }
 
-body .text2 {
-    width: 80vh;
-    text-align: justify;
-    font-size: 3vh;
-}
-
-body ol {
-    font-size: 40px;
-    width: 80vh;
-}
-
-body .judul3 {
-    font-size: 40px;
-    margin-top: 10vh;
-    width: 80vh;
-}
-
-body .text3 {
-    width: 80vh;
-    text-align: justify;
-    font-size: 3vh;
-    font-style: bold;
+    body .text-pendahuluan,
+    body .text,
+    body .text2,
+    body .text3 {
+        font-size: 4vh; /* Adjusted font size for smaller screens */
+    }
 }
